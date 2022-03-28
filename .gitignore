@@ -13,7 +13,8 @@ develop-eggs/
 dist/
 downloads/
 eggs/
-.eggs/
+.eggs/.DS_Store
+
 lib/
 lib64/
 parts/
@@ -127,3 +128,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# My additions
+.DS_Store
