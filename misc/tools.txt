@@ -1,0 +1,30 @@
+Antonia Ritter
+Worked with: McKenna Wirth 
+
+1. 137.22.90.238.
+(opensource.com/article/18/5/how-find-ip-address-linux)
+
+2. Use the command >ping [hostname] or >nmap [hostname].
+(www.dotcom-monitor.com/wiki/knowledge-base/target-hostname-or-ip-address/) 
+
+3. You can use >nslookup [ip address] or >nmap [ip address], but they only work for addresses that are public record. There are also lookup sites like lookup.icann.org. 
+(www.javatpoint.com/get-hostname-from-ip-address)
+
+4. [[[]]]
+
+5. [[[]]] Using >lsof -i :[port].
+(www.tecmint.com/find-out-which-process-listening-on-a-particular-port/)
+
+6. [[[]]] Using >sudo ss -lptn.
+(unix.stackexchange.com/questions/106561/finding-the-pid-of-the-process-using-a-specific-port)
+
+7. Using >wget -O [path/filename] [url].
+(unix.stackexchange.com/questions/625346/command-line-equivalent-to-saving-a-website-using-right-click-save-webpage)
+
+8. Using >curl -i [url] or >curl -v [url]. 
+(serverfault.com/questions/249483/shell-command-to-see-the-http-headers)
+
+9. Also using >curl -v [url] (the request header lines start with >). 
+
+
+
