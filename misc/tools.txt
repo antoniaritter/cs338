@@ -5,17 +5,19 @@ Worked with: McKenna Wirth
 (opensource.com/article/18/5/how-find-ip-address-linux)
 
 2. Use the command >ping [hostname] or >nmap [hostname].
-(www.dotcom-monitor.com/wiki/knowledge-base/target-hostname-or-ip-address/) 
+(dotcom-monitor.com/wiki/knowledge-base/target-hostname-or-ip-address/) 
 
 3. You can use >nslookup [ip address] or >nmap [ip address], but they only work for addresses that are public record. There are also lookup sites like lookup.icann.org. 
-(www.javatpoint.com/get-hostname-from-ip-address)
+(javatpoint.com/get-hostname-from-ip-address)
 
-4. [[[]]]
+4. Using >scp [source] [destination] 
+(Source: class discussion)
+(linuxize.com/post/how-to-use-scp-command-to-securely-transfer-files/)
 
-5. [[[]]] Using >lsof -i :[port].
-(www.tecmint.com/find-out-which-process-listening-on-a-particular-port/)
+5. Using >lsof -i :[port].
+(tecmint.com/find-out-which-process-listening-on-a-particular-port/)
 
-6. [[[]]] Using >sudo ss -lptn.
+6. Using >ss -lptn. (Sudo might be necessary.) 
 (unix.stackexchange.com/questions/106561/finding-the-pid-of-the-process-using-a-specific-port)
 
 7. Using >wget -O [path/filename] [url].
