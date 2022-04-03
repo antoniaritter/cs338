@@ -1,0 +1,78 @@
+Antonia Ritter
+Worked with: McKenna Wirth
+
+
+===== DAYTIME =====
+
+1. 3-way handshake 
+1	0.000000000	192.168.249.128	129.6.15.28	TCP	74	44718 → 13 [SYN] Seq=0 Win=64240 Len=0 MSS=1460 SACK_PERM=1 TSval=1404835580 TSecr=0 WS=128
+2	0.034294207	129.6.15.28	192.168.249.128	TCP	60	13 → 44718 [SYN, ACK] Seq=0 Ack=1 Win=64240 Len=0 MSS=1460
+3	0.034349294	192.168.249.128	129.6.15.28	TCP	54	44718 → 13 [ACK] Seq=1 Ack=1 Win=64240 Len=0
+
+2. Client port number 
+Source port is listed in Wireshark as 44718
+
+3. Frame with date and time 
+4	0.068486167	129.6.15.28	192.168.249.128	DAYTIME	105	DAYTIME Response
+
+4. Frame content 
+59672 22-04-03 20:36:16 50 0 0 307.1 UTC(NIST) *
+
+5. 
+[SYN] means synchronize - the client and server are establishing communication using these message 
+
+6. 
+[ACK] means acknowledge - the client server are acknowledging the syn messages 
+
+7. 
+[FIN] means finalize - after this is sent the connection is closed
+
+8. Who closed connection? 
+The client initiated the closing of the connection, which we know because it sends the frame with [FIN] 
+
+
+===== HTTP =====
+
+1. How many TCP connections? 
+106 TCP connections (based on the protocol field)
+
+2. Can you tell when index.html was requested? 
+Yes, index.html was requested in frame 28: 
+28	0.166324113	192.168.249.128	45.79.89.123	HTTP	403	GET /index.html HTTP/1.1
+
+3. Can you tell when photo was requested? 
+Yes, jeff_square_head.jpg was requested in frame 32: 
+32	0.266099840	192.168.249.128	45.79.89.123	HTTP	372	GET /jeff_square_head.jpg HTTP/1.1
+
+
+===== QUESTIONS =====
+
+What's the TLSv1.2 protocol? Is it related to encryption? 
+
+What is [PSH]? 
+
+What is the signicifance of the color coding? 
+
+Are the majority of the TCP packets image data? 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
