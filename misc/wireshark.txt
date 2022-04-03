@@ -17,6 +17,10 @@ Source port is listed in Wireshark as 44718
 
 4. Frame content 
 59672 22-04-03 20:36:16 50 0 0 307.1 UTC(NIST) *
+The first 5 digits (59672) refer to the modified Julian day. The 50 indicates that we are currently on daylight savings time, and the two 0s mean there are 0 leap seconds this month and that the server didn't send any errors. Finally, the 307.1 is microseconds of delay in the network, UTC(NIST) indicates it's in Coordinated Universal Time from NIST, and the * is on "on time marker" that has to do with packet formatting. 
+(www.esp8266.com/viewtopic.php?p=8785)
+(en.wikipedia.org/wiki/Julian_day)
+(tf.nist.gov/general/pdf/1046.pdf)
 
 5. 
 [SYN] means synchronize - the client and server are establishing communication using these message 
